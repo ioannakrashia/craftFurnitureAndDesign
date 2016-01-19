@@ -83,7 +83,7 @@
                     </div>
                     
                     <div class="form-line-break form-input-small">
-                        <input type="text"></input>
+                        <input type="text" name="fullName" placeholder="Full name" required="required" maxlength="50">
                     </div>
             
                     <div class="form-line-break">
@@ -91,8 +91,7 @@
                     </div>
                         
                     <div class="form-line-break form-input-small">
-                        <input type="email" placeholder="@ e-mail" required></input>
-                    </div>
+                        <input type="email" name="emailAddress" placeholder="@ email" required="required">                        </div>
             
                     <div class="form-line-break">telephone number</label>
                     </div>
@@ -119,9 +118,11 @@
                     </div>
                         
                     <div class="form-line-break form-input-grey">
-                        <select id="State" placeholder="---" required>
+                        <select name="state" id="State" placeholder="---" required>
+                            <option value="" selected="selected">Please select</option>
+                            <option value="NSW">New South Wales</option>
+                            <option value="VIC">Victoria</option>
                             <option>ACT</option>
-                            <option>NSW</option>
                             <option>VIC</option>
                             <option>WA</option>
                             <option>SA</option>
@@ -131,11 +132,11 @@
                     </div>    
                         
                     <div class="form-line-break">
-                        <label>Description*</label>
+                        <label>Comments*</label>
                     </div>
                     
                     <div class="form-line-break form-input-small form-input-box">
-                        <input type="text"></input>
+                        <input type="text" maxlength="1000"></input>
                     </div>
                         
                         
